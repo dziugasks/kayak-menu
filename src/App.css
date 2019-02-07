@@ -1,32 +1,128 @@
-.App {
-  text-align: center;
+i {
+  border: solid #51697a;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+}
+
+.menu > li {
+  margin-right: 5px;
+  display: inline-block;
+  height: 28px;
+  border: 1px solid #d9e1e8;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #51697a;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 0 16px;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  position: relative;
+}
+
+.menu li span {
+  font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.menu .more {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.menu li:hover {
+  background-color: #1e93f5;
+  color: #fff;
+}
+
+.menu li:hover i {
+  border-color: #fff;
+}
+
+.menu .hover {
+  background-color: #1e93f5;
+  color: #fff;
+}
+.menu .hover i {
+  border-color: white;
+}
+.menu .hover .dropdown {
+  color: #17232c;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  width: 300%;
+  border: 1px solid #d9e1e8;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hidden {
+  display: none;
+}
+
+.dropdown li span.price {
+  float: right;
+  margin-right: 10px;
+  color: #6d8494;
+}
+.dropdown li:hover span.price {
+  color: #1e93f5;
+}
+.dropdown li:hover {
+  color: #1e93f5;
+  background-color: #f1f4f7;
+}
+
+.menu > li:hover .dropdown {
+  color: #17232c;
+}
+
+.menu li span.only {
+  color: #6d8494;
+  margin-left: 3px;
+  font-size: 12px;
+}
+
+.menu .dropdown li span.only:hover {
+  color: #6d8494;
+  border-bottom: 0.4px solid #6d8494;
+}
+
+.hover-icon {
+  border-color: #fff;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 3.5px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
