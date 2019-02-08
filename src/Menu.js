@@ -80,10 +80,10 @@ class Menu extends Component {
     const items = [
       { name: "All", price: null, filter: "*" },
       { name: "Small", price: "$422+", filter: "small" },
-      { name: "Medium", price: "$452+", filter: "medium" },
-      { name: "Large", price: "$482+", filter: "large" },
-      { name: "SUV", price: "$4299+", filter: "suv" },
-      { name: "VAN", price: "$222+", filter: "van" }
+      { name: "Medium", price: "$433+", filter: "medium" },
+      { name: "Large", price: "$456+", filter: "large" },
+      { name: "SUV", price: "$525+", filter: "suv" },
+      { name: "Van", price: "$649+", filter: "van" }
     ];
 
     return items.map((i, index) => (

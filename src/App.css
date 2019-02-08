@@ -44,6 +44,7 @@ ul {
 .menu li:hover {
   background-color: #1e93f5;
   color: #fff;
+  border-color: #1e93f5;
 }
 
 .menu li:hover i {
@@ -53,6 +54,8 @@ ul {
 .menu .hover {
   background-color: #1e93f5;
   color: #fff;
+  border-radius: 2px;
+  border-color: #1e93f5;
 }
 .menu .hover i {
   border-color: white;
@@ -63,15 +66,19 @@ ul {
 
 .dropdown {
   position: absolute;
-  top: 110%;
+  top: 115%;
   left: 0;
   padding: 10px;
-  width: 300%;
-  border: 1px solid #d9e1e8;
+  min-width: 19.5em;
   border-radius: 2px;
+  box-shadow: 0 4px 4px 0 rgb(253, 252, 252), 0 3px 5px 0 rgb(226, 218, 218);
   font-weight: normal;
   font-size: 14px;
   font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropdown li {
+  max-height: 28px;
 }
 .hidden {
   display: none;
@@ -79,13 +86,14 @@ ul {
 
 .dropdown li span.price {
   float: right;
-  margin-right: 10px;
+  margin-right: 15px;
   color: #6d8494;
 }
 .dropdown li:hover span.price {
   color: #1e93f5;
 }
 .dropdown li:hover {
+  border-radius: 2px;
   color: #1e93f5;
   background-color: #f1f4f7;
 }
@@ -102,7 +110,7 @@ ul {
 
 .menu .dropdown li span.only:hover {
   color: #6d8494;
-  border-bottom: 0.4px solid #6d8494;
+  text-decoration: underline;
 }
 
 .hover-icon {
@@ -124,7 +132,7 @@ ul {
 .container {
   display: inline-block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -143,7 +151,7 @@ ul {
 .checkmark {
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 15px;
   height: 16px;
   width: 16px;
   background-color: #fff;
