@@ -4,7 +4,7 @@ import ExtendableMenuItem from "./ExtendableMenuItem.js";
 
 const INITIAL_STATE = {
   filters: [],
-  open: true,
+  open: false,
   only: null,
   dropdownFilters: []
 };

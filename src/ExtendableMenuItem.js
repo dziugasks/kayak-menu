@@ -14,15 +14,18 @@ const ExtendableMenuItem = ({
 }) => {
   return (
     <li onMouseEnter={() => onMouseEnter(filter)} onMouseLeave={onMouseLeave}>
-      <input
-        type="checkbox"
-        checked={
-          filters.includes(filter) || (filters.length === 0 && filter === "*")
-        }
-        onChange={() => onClick(filter, true)}
-        id={`id_${filter}`}
-      />
-      <label htmlFor={`id_${filter}`}>{name}</label>
+      <label className="container" htmlFor={`id_${filter}`}>
+        {name}
+        <input
+          type="checkbox"
+          checked={
+            filters.includes(filter) || (filters.length === 0 && filter === "*")
+          }
+          onChange={() => onClick(filter, true)}
+          id={`id_${filter}`}
+        />
+        <span className="checkmark" />
+      </label>
       {hovered ? (
         <span className="only" onClick={() => clearDropdown(filter)}>
           only
