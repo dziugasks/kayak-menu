@@ -11,12 +11,6 @@ ul {
   padding: 0;
 }
 
-/* input {
-  height: 16px;
-  width: 16px;
-  margin-left: 10px;
-} */
-
 .menu > li {
   margin-right: 5px;
   display: inline-block;
@@ -138,7 +132,6 @@ ul {
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -147,7 +140,6 @@ ul {
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 5px;
@@ -158,30 +150,25 @@ ul {
   border: 1px solid #92aabb;
 }
 
-/* On mouse-over, add a grey background color */
 .dropdown li:hover .container:hover input ~ .checkmark {
   border-color: #1e93f5;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #1e93f5;
   border-color: #1e93f5;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 6px;
   top: 1px;
